@@ -1,0 +1,156 @@
+/* Sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'helvetica', san-serif;
+}
+
+
+body {
+    background: linear-gradient(to right, rgb(208, 46, 157), rgb(97,159,237));
+
+    /* Center  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Container*/
+
+.container {
+    max-width: 90%;
+    width: 1200px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 40px rgb(141, 20, 165);
+    border-radius: 10px;
+} 
+
+/* padding for inside the container */
+.content {
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.header {
+    background-color: rgb(231, 231, 231);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* border curves also be sure to change border-raduis in the containder as well!  */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.icon-container {
+
+    position: relative;
+    top: 50px;
+    padding: 20px; 
+    background-color: white;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.general-information {
+    display: flex;
+    flex-direction: column;
+    align-items: column;
+    padding: 10px;
+}
+
+.status {
+    font-size: 3rem;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.location {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-top: 8px;
+    color: #8f8f8f;
+}
+
+.detail-section {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    /* even spacing */
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 20px; 
+}
+
+.detail.bordered {
+    border-left: 5px solid rgb(223, 223, 223);
+    border-right: 5px solid rgb(223, 223, 223);
+
+}
+
+.detail .title {
+    font-size: 2rem;
+    flex-grow: 1;
+    font-weight: bold;
+    color: #8A2BE2;
+}
+
+.detail .value {
+    font-size: 2rem;
+    color: #777;
+    margin-top: 15px;
+}
+
+/* city search container */
+
+.city-search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.city-search {
+
+    margin-top: 40px;
+    font-size: 2rem;
+    outline: none;
+    border: 2px solid rgb(223, 223, 223);
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 100%;
+    
+}
+
+/* google API styles */
+/* search text */
+.pac-item {
+    font-size: 2rem;
+    padding: 10px 10px;
+}
+
+/* Small black query text */
+
+.pac-item-query {
+    font-size: 2rem;
+    padding-right: 14px;
+}
+
+/* footer */
+
+.darksky-logo {
+    position: absolute;
+    bottom: 50px;
+    right: 70px;
+    color: #333;
+    font-size: 1.4rem;
+}
